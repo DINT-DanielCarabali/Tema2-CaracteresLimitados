@@ -13,10 +13,8 @@
                 <GradientStop Color="White" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <TextBox x:Name="textoTextBox" AcceptsReturn="True" MaxLength="140" HorizontalAlignment="Center" Margin="0,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="700" Height="323"/>
-        <TextBlock x:Name="contadorTextBlock" HorizontalAlignment="Left" Margin="676,359,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" FontSize="20" Foreground="#FF6C6C6C"/>
-        <TextBlock HorizontalAlignment="Left" Margin="692,359,0,0" TextWrapping="Wrap" Text="/" VerticalAlignment="Top" FontSize="20" Foreground="#FF6C6C6C"/>
-        <TextBlock x:Name="longitudMaximaTextBlock" HorizontalAlignment="Left" Margin="705,359,0,0" TextWrapping="Wrap" Text="140" VerticalAlignment="Top" FontSize="20" Foreground="#FF6C6C6C"/>
+        <TextBox x:Name="textoTextBox" AcceptsReturn="True" MaxLength="140" HorizontalAlignment="Center" Margin="0,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="700" Height="323" TextChanged="textoTextBox_TextChanged"/>
+        <TextBlock x:Name="contadorTextBlock" HorizontalAlignment="Left" Margin="667,359,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Foreground="#FF6C6C6C"><Run Text="0/"/><Run Text="140"/></TextBlock>
 
     </Grid>
 </Window>

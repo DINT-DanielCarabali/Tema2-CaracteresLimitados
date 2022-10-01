@@ -28,14 +28,10 @@ namespace Tema2_CaracteresLimitados
 
         private void textoTextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            int contador = textoTextBox.Text.Length,
-                longitudMaxima = textoTextBox.MaxLength;
-            while (contador < longitudMaxima)
-            {
-                contador++;
-                if (contador == longitudMaxima)
-                    textoTextBox.IsReadOnly = true;
-            }
+            int contador = textoTextBox.Text.Length;
+            contadorTextBlock.Text = $"{contador}/140";
+            if (contador == textoTextBox.MaxLength)
+                textoTextBox.IsReadOnly = true;
         }
     }
 }
